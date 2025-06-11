@@ -27,7 +27,7 @@ import java.util.Scanner;
 public class Exercicio05 {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in); 
+Scanner input = new Scanner(System.in); 
 		String p1,p2,p3,p4,p5; 
 		int cont = 0;
 		
@@ -46,24 +46,31 @@ public class Exercicio05 {
 		System.out.println("Já trabalhou com a vítima?S para Sim e N para não: ");
 		p5 = input.next();
 		
-		if (p1 == "S") {
+		if (p1.equals("S")) {
 			cont++;
-		} else if(p2 == "S") {			
+		}
+		if(p2.equals("S")) {			
 			cont++;
-		} else if (p3 == "S") {
+		} 
+		if (p3.equals("S")) {
 			cont++;
-		}else if (p4 == "S") {
+		}
+		if (p4.equals("S")) {
 			cont++;
-		}else if (p5 == "S") {
+		}
+		if (p5.equals("S")) {
 			cont++;
-		} else if (cont == 2) {
+		}
+		if (cont == 2) {
 			System.out.println("Suspeita.");
-		} else if (cont > 2 && cont < 5) {
+		}
+		if (cont > 2 && cont < 5) {
 			System.out.println("Cúmplice.");
-		} else if (cont == 5) {
+		}
+		if (cont == 5) {
 			System.out.println("Assassino.");
 		}
-		else {
+		 if (cont == 0){
 			System.out.println("Inocente.");
 		}
 	}
